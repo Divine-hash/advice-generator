@@ -92,15 +92,15 @@ body {
   inline-size: min(90%, 450px);
   background-color: var(--clr-dark-grayish-blue);
   text-align: center;
-  padding: 20px 20px 0;
+  padding: calc(30em / 16) calc(20em / 16) 0;
 }
 
 .card > *:nth-child(2) {
-  margin-top: 30px;
+  margin-top: calc(30em / 24);
 }
 
 .card > *:nth-child(3) {
-  margin-top: 20px;
+  margin-top: calc(20em / 16);
 }
 
 /* Button */
@@ -108,6 +108,11 @@ body {
   background-color: var(--clr-neon-green);
   border: none;
   border-radius: 50%;
-  padding: 20px;
+  padding: calc(20em / 16);
   transform: translateY(50%);
+}
+
+.btn:focus-visible {
+  outline: 1px dashed var(--clr-light-cyan);
+  outline-offset: 10px;
 }
