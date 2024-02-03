@@ -3,7 +3,6 @@
   CUSTOM PROPERTIES
 ===============================
 */
-
 :root {
   /* colors */
   --clr-light-cyan: hsl(193, 38%, 86%);
@@ -13,9 +12,13 @@
   --clr-dark-grayish-blue: hsl(217, 19%, 24%);
 
   /* font sizes */
-  --fs-400: calc(18em / 16);
+  --fs-400: calc(24em / 16);
   --fs-300: calc(16em / 16);
   --fs-200: calc(14em / 16);
+
+  /* font-weights */
+  --fw-800: 800;
+  --fw-400: 400;
 }
 
 
@@ -25,7 +28,6 @@
   RESETS
 ===============================
 */
-
 html {
   box-sizing: border-box;
 }
@@ -37,7 +39,7 @@ html {
 }
 
 img {
-  max-inline-size: 100%;
+  inline-size: 100%;
   display: block;
 }
 
@@ -48,6 +50,7 @@ input, textarea, select, button {
 body {
   font-family: 'Manrope', sans-serif;
   block-size: 100vb;
+  background-color: var(--clr-dark-blue);
 }
 
 
@@ -66,15 +69,45 @@ body {
   place-items: center;
 }
 
+.fs-200 { font-size: var(--fs-200); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-400 { font-size: var(--fs-400); }
+
+.fw-400 { font-weight: var(--fw-400); }
+.fw-800 { font-weight: var(--fw-800); }
+
+.text-cyan { color: var(--clr-light-cyan); }
+.text-neon { color: var(--clr-neon-green); }
+
 
 
 /*
 ===============================
-  CARD COMPONENT
+  COMPONENTS
 ===============================
 */
-
+/* Card */
 .card {
-  border: 1px solid red;
-  inline-size: min(90%, 400px);
+  border-radius: 15px;
+  inline-size: min(90%, 450px);
+  background-color: var(--clr-dark-grayish-blue);
+  text-align: center;
+  padding: 20px 20px 0;
+}
+
+.card > *:nth-child(2) {
+  margin-top: 30px;
+}
+
+.card > *:nth-child(3) {
+  margin-top: 20px;
+}
+
+/* Button */
+.btn {
+  background-color: var(--clr-neon-green);
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  transform: translateY(50%);
 }
