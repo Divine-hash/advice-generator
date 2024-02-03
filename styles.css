@@ -92,11 +92,11 @@ body {
   inline-size: min(90%, 450px);
   background-color: var(--clr-dark-grayish-blue);
   text-align: center;
-  padding: calc(30em / 16) calc(20em / 16) 0;
+  padding: calc(35em / 16) calc(20em / 16) 0;
 }
 
 .card > *:nth-child(2) {
-  margin-top: calc(30em / 24);
+  margin-top: calc(25em / 24);
 }
 
 .card > *:nth-child(3) {
@@ -110,9 +110,11 @@ body {
   border-radius: 50%;
   padding: calc(20em / 16);
   transform: translateY(50%);
+  transition: box-shadow .3s;
 }
 
+.btn:hover,
 .btn:focus-visible {
-  outline: 1px dashed var(--clr-light-cyan);
-  outline-offset: 10px;
+  outline: none;
+  box-shadow: 0 0 20px 10px hsl(150 100% 66% / .5);
 }
