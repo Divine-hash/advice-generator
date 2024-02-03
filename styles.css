@@ -1,0 +1,53 @@
+/*
+===============================
+  CUSTOM PROPERTIES
+===============================
+*/
+
+:root {
+  /* colors */
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-dark-blue: hsl(218, 23%, 16%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+
+  /* font sizes */
+  --fs-400: calc(18em / 16);
+  --fs-300: calc(16em / 16);
+  --fs-200: calc(14em / 16);
+}
+
+
+
+/*
+===============================
+  RESETS
+===============================
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+input, textarea, select, button {
+  font: inherit;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  min-block-size: 100vb;
+  display: grid;
+  place-items: center;
+}
