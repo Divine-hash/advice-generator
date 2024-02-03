@@ -47,7 +47,34 @@ input, textarea, select, button {
 
 body {
   font-family: 'Manrope', sans-serif;
-  min-block-size: 100vb;
+  block-size: 100vb;
+}
+
+
+
+/*
+===============================
+  UTILITIES
+===============================
+*/
+.container {
+  block-size: 100%;
+}
+
+.grid {
   display: grid;
   place-items: center;
+}
+
+
+
+/*
+===============================
+  CARD COMPONENT
+===============================
+*/
+
+.card {
+  border: 1px solid red;
+  inline-size: min(90%, 400px);
 }

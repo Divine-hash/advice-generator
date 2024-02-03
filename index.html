@@ -14,17 +14,30 @@
   <script src="./dist/index.js" defer></script>
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <main class="container">
+    <div class="card">
+      <h1>ADVICE #117</h1>
+      <P aria-live="polite">
+        <q>It is easy to situp and take notice. What's difficult is getting up and taking action.</q>
+      </P>
+      <div>
+        <picture>
+          <source media="(max-width: 719px)" srcset="./images/pattern-divider-mobile.svg">
+          <source media="(min-width: 720px)" srcset="./images/pattern-divider-desktop.svg">
+          <img src="./images/pattern-divider-mobile.svg" alt="">
+        </picture>
+      </div>
+      <button type="button" arai-label="genrate advice">
+        <img src="./images/icon-dice.svg" alt="">
+      </button>
+    </div>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
