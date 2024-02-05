@@ -26,14 +26,14 @@ async function fetchAdvice(url: string): Promise<AdviceObj> {
 
 function renderContent(obj: AdviceObj): void {
   let elem = document.querySelector('.card > p') as HTMLParagraphElement;
-  let heading = document.querySelector('.card > h1') as HTMLHeadElement;
+  let heading = document.querySelector('.card > h1') as HTMLHeadingElement;
   heading.innerHTML = `ADVICE #${obj.slip.id}`;
   elem.innerHTML = `<q>${obj.slip.advice}</q>`
 }
 
 function addLoader(isLoader: boolean): void {
   let elem = document.querySelector('.card > p') as HTMLParagraphElement;
-  let heading = document.querySelector('.card > h1') as HTMLHeadElement;
+  let heading = document.querySelector('.card > h1') as HTMLHeadingElement;
   let loader = document.querySelector('.card > .loader-container') as HTMLDivElement;
 
   if (isLoader) {
