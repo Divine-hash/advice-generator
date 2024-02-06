@@ -51,6 +51,8 @@ body {
   font-family: 'Manrope', sans-serif;
   block-size: 100vb;
   background-color: var(--clr-dark-blue);
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 
