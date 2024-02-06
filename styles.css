@@ -49,17 +49,12 @@ input, textarea, select, button {
 
 body {
   font-family: 'Manrope', sans-serif;
-  block-size: 100vb;
+  block-size: 100vh;
   border: 1px solid red;
   background-color: var(--clr-dark-blue);
   display: grid;
   grid-template-rows: 1fr auto;
 }
-
-body > * {
-  border: 1px solid blue;
-}
-
 
 
 /*
