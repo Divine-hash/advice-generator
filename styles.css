@@ -64,7 +64,6 @@ body {
 */
 .container {
   block-size: 100%;
-  border: 1px solid red;
 }
 
 .grid {
